@@ -17,9 +17,9 @@ reglist = [["r0","00000000"],
            ["r14","00000000"],
            ["r15","00000000"]]
 
-f = open(sys.argv[2], "w")
-f.close()
-f = open(sys.argv[2], "a")
+#f = open(sys.argv[2], "w")
+#f.close()
+#f = open(sys.argv[2], "a")
 
 def initfile():
     f = open(sys.argv[2], "w")
@@ -108,8 +108,8 @@ def readfilevisual(fpath):
     f.close()
 
 #initfile()
-if sys.argv[3]=='1':
-    readfileelf(sys.argv[1])
-else:
-    readfilevisual(sys.argv[1])
-f.close()
+#if sys.argv[3]=='1':
+#    readfileelf(sys.argv[1])
+#else:
+#    readfilevisual(sys.argv[1])
+#f.close()

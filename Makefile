@@ -2,22 +2,22 @@ CXX= g++
 
 CC= gcc
 
-SRCS:= first.c
+SRCS:= first.cpp
 
 INC= -I ./ \
-	 -I	/usr/include/python3.6m/
+	 -I	/usr/include/python2.7/
 
-OBJS:=	$(patsubst %.c, %.o, $(SRCS))
+OBJS:=	$(patsubst %.cpp, %.o, $(SRCS))
 
 DEPS:= $(OBJS:.o=.d)
 
-.SUFFIXES: .o .c
+.SUFFIXES: .o .cpp
 
 TARGET= VINH
 all:$(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CXX) -o $@  -g  $^ -lpython3.6m
+	$(CXX) -o $@  -g  $^ -lpython2.7
 
 #%.o: %.c
 #	$(CC) $(INC)  -c -g  $< -o  $@ 
