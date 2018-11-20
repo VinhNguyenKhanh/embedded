@@ -1,5 +1,7 @@
 
+import sys
 
+def multiply(a, b):
+    print('The result of '+ str(a) +' x ' + str(b) + ' = ' + str(a*b)) 
 
-def multiply():
-    print('The result of 12345 x 6789 : \n') 
+#multiply(sys.argv[1],sys.argv[2])
